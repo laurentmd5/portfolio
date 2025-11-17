@@ -1,0 +1,118 @@
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+.masthead-heading {
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.masthead-subheading {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.section-heading {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+.card-title {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+/* Text utilities */
+.text-uppercase {
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+}
+
+.font-weight-light {
+    font-weight: 300;
+}
+
+.font-weight-normal {
+    font-weight: 400;
+}
+
+.font-weight-bold {
+    font-weight: 700;
+}
+
+/* Specific heading styles for different sections */
+.timeline-item h4 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.skill-category h4 {
+    color: var(--secondary-color);
+    font-size: 1.25rem;
+}
+
+.certification-card .card-title {
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+}
+
+.project-card .card-title {
+    font-size: 1.25rem;
+}
+
+/* Responsive headings */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+    
+    h3 {
+        font-size: 1.75rem;
+    }
+    
+    .masthead-heading {
+        font-size: 2.5rem;
+    }
+    
+    .masthead-subheading {
+        font-size: 1.25rem;
+    }
+    
+    .section-heading {
+        font-size: 2rem;
+    }
+}

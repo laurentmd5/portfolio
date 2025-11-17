@@ -1,0 +1,377 @@
+/* Import des autres fichiers CSS */
+@import url('body.css');
+@import url('heading.css');
+
+/* Variables CSS */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #1abc9c;
+    --accent-color: #3498db;
+    --light-color: #ecf0f1;
+    --dark-color: #2c3e50;
+}
+
+/* Navigation */
+.navbar {
+    background-color: var(--primary-color) !important;
+    padding: 1rem 0;
+    transition: all 0.3s;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+}
+
+/* Masthead */
+.masthead {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
+    padding: 10rem 0;
+    color: white;
+}
+
+.masthead-avatar {
+    width: 15rem;
+    border: 0.5rem solid rgba(255, 255, 255, 0.2);
+}
+
+/* Dividers */
+.divider-custom {
+    margin: 1.25rem 0 1.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divider-custom-line {
+    width: 100%;
+    max-width: 7rem;
+    height: 0.25rem;
+    background-color: currentColor;
+    border-radius: 1rem;
+}
+
+.divider-custom-icon {
+    color: currentColor;
+    font-size: 2rem;
+    margin: 0 1rem;
+}
+
+.section-heading {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Portfolio Items */
+.portfolio-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-item-caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(26, 188, 156, 0.9);
+    opacity: 0;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.portfolio-item:hover .portfolio-item-caption {
+    opacity: 1;
+}
+
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.tech-badge {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.project-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.btn-project {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.btn-project:hover {
+    background-color: #16a085;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Skills */
+.skill-badge {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    margin: 0.25rem;
+    display: inline-block;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.skill-category {
+    margin-bottom: 2rem;
+}
+
+.skill-category h4 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--light-color);
+    padding-bottom: 0.5rem;
+}
+
+/* Custom Colors */
+.bg-primary-custom {
+    background-color: var(--primary-color) !important;
+}
+
+.text-primary-custom {
+    color: var(--primary-color) !important;
+}
+
+.btn-primary-custom {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    color: white;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    transition: all 0.3s;
+}
+
+.btn-primary-custom:hover {
+    background-color: #16a085;
+    border-color: #16a085;
+    transform: translateY(-2px);
+}
+
+/* Timeline */
+.timeline {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background-color: var(--secondary-color);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -2.5rem;
+    top: 0.5rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+    border: 3px solid white;
+    box-shadow: 0 0 0 3px var(--secondary-color);
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-color);
+    color: white;
+    padding: 3rem 0;
+}
+
+.social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    transition: all 0.3s;
+    margin: 0 0.5rem;
+}
+
+.social-icon:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-3px);
+}
+
+/* Project Cards */
+.project-card {
+    height: 100%;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.code-snippet {
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 0.25rem;
+    padding: 1rem;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+    overflow-x: auto;
+    margin: 1rem 0;
+}
+
+.certification-badge {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    margin: 0.5rem;
+    display: inline-block;
+    font-weight: 600;
+}
+
+/* Styles pour la section certifications */
+.certification-card {
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+    height: 100%;
+}
+
+.certification-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.certification-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+}
+
+.certification-badge-small {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+/* Styles pour la section SRE/DevOps */
+.sre-feature {
+    text-align: center;
+    padding: 2rem 1rem;
+    border-radius: 0.5rem;
+    background-color: rgba(26, 188, 156, 0.1);
+    margin-bottom: 2rem;
+    transition: all 0.3s;
+}
+
+.sre-feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.sre-icon {
+    font-size: 3rem;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.impact-metric {
+    text-align: center;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.impact-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    display: block;
+}
+
+.impact-label {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .masthead {
+        padding: 6rem 0;
+    }
+    
+    .section-heading {
+        font-size: 2rem;
+    }
+    
+    .impact-number {
+        font-size: 2rem;
+    }
+    
+    .divider-custom-icon {
+        font-size: 1.5rem;
+    }
+    
+    .masthead-avatar {
+        width: 10rem;
+    }
+}

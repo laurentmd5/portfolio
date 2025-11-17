@@ -1,0 +1,79 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+/* Smooth scrolling for the whole page */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Ensure proper box sizing */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* Main content spacing */
+.page-section {
+    padding: 5rem 0;
+}
+
+.page-section:first-of-type {
+    padding-top: 7rem;
+}
+
+/* Container max width for better readability */
+.container {
+    max-width: 1200px;
+}
+
+/* Links styling */
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+/* Lists styling */
+ul, ol {
+    padding-left: 1.5rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+/* Images responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Section backgrounds alternate for visual interest */
+.bg-light {
+    background-color: #f8f9fa !important;
+}
+
+/* Custom utility classes */
+.text-justify {
+    text-align: justify;
+}
+
+.lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+/* Focus styles for accessibility */
+a:focus, button:focus {
+    outline: 2px solid var(--secondary-color);
+    outline-offset: 2px;
+}
